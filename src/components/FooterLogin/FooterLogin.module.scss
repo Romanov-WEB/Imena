@@ -1,0 +1,42 @@
+.footer {
+    background: #173343;
+}
+
+.content {
+    width: calc((100% / 2) + 552px);
+    margin: 0 auto;
+    .blockNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 140px;
+        border-bottom: 1px solid #284b5f;
+        .imageLogoPro {
+            position: relative;
+            width: 228px;
+            height: 42px;
+        }
+        .wrapperNetwork {
+            display: flex;
+        }
+    }
+}
+
+.wrapperContact {
+    color: white;
+    a {
+        text-transform: uppercase;
+        padding-right: 25px;
+    }
+}
+
+.networkLink {
+    padding-right: 25px;
+}
+
+.polit {
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}

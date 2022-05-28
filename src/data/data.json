@@ -1,0 +1,188 @@
+{
+    "menu": {
+        "contacts": {
+            "phone": "+7 (495) 023-87-50",
+            "mail": "info@imena.studios"
+        },
+        "network": [
+            {
+                "url": "/image/header/facebook.svg",
+                "header": {
+                    "width": 8,
+                    "height": 15
+                },
+                "footer": {
+                    "width": 10,
+                    "height": 19
+                },
+                "alt": "facebook"
+            },
+            {
+                "url": "/image/header/vk.svg",
+                "header": {
+                    "width": 17,
+                    "height": 9
+                },
+                "footer": {
+                    "width": 21,
+                    "height": 12
+                },
+                "alt": "vk"
+            },
+            {
+                "url": "/image/header/instagram.svg",
+                "header": {
+                    "width": 13,
+                    "height": 13
+                },
+                "footer": {
+                    "width": 19,
+                    "height": 19
+                },
+                "alt": "instagram"
+            },
+            {
+                "url": "/image/header/youtube.svg",
+                "header": {
+                    "width": 16,
+                    "height": 11
+                },
+                "footer": {
+                    "width": 22,
+                    "height": 15
+                },
+                "alt": "youtube"
+            }
+        ],
+        "loginOut": [
+            {
+                "image": {
+                    "url": "/image/header/user.svg",
+                    "width": 10,
+                    "height": 12,
+                    "alt": "user"
+                },
+                "link": "/login/client",
+                "text": "Кабинет клиента"
+            },
+            {
+                "image": {
+                    "url": "/image/header/master.svg",
+                    "width": 10,
+                    "height": 12,
+                    "alt": "master"
+                },
+                "link": "/login/master",
+                "text": "Кабинет мастера"
+            },
+            {
+                "image": {
+                    "url": "/image/header/list.svg",
+                    "width": 10,
+                    "height": 12,
+                    "alt": "list"
+                },
+                "link": "/search/master",
+                "text": "Онлайн-запись"
+            },
+            {
+                "image": {
+                    "url": "/image/header/search.png",
+                    "width": 10,
+                    "height": 12,
+                    "alt": "search"
+                },
+                "link": "/search/full",
+                "text": "Найти мастера или коворкинг"
+            }
+        ],
+        "navigator": [
+            {
+                "text": "АРЕНДА СТУДИЙ",
+                "link": "/"
+            },
+            {
+                "text": "МАСТЕРАМ",
+                "link": "/",
+                "image": {
+                    "url": "/image/header/arrow.png",
+                    "width": 14,
+                    "height": 8,
+                    "alt": "arrow"
+                }
+            },
+            {
+                "text": "КОВОРКИНГИ",
+                "link": "/",
+                "image": {
+                    "url": "/image/header/arrow.png",
+                    "width": 14,
+                    "height": 8,
+                    "alt": "arrow"
+                }
+            },
+            {
+                "text": "ФРАНШИЗА",
+                "link": "/franchise"
+            },
+            {
+                "text": "ОПЛАТА",
+                "link": "/info-sber"
+            },
+            {
+                "text": "КОНТАКТЫ",
+                "link": "/contacts"
+            }
+        ]
+    },
+    "home": {
+        "items": [
+            {
+                "iconUrl": "/home/i-adv-01.svg",
+                "text": "Действующих коворкинга"
+            },
+            {
+                "iconUrl": "/home/i-adv-02.svg",
+                "text": "Профессиональных мастеров"
+            },
+            {
+                "iconUrl": "/home/i-adv-03.svg",
+                "text": "Довольных клиентов"
+            },
+            {
+                "iconUrl": "/home/i-adv-04.svg",
+                "text": "Бьюти-направлений"
+            },
+            {
+                "iconUrl": "/home/i-adv-05.svg",
+                "text": "м2 дизайнерских решений"
+            },
+            {
+                "iconUrl": "/home/i-adv-06.svg",
+                "text": "Собственная ИТ-платформа ImenaPro"
+            }
+        ],
+        "imageSurvey": [
+            {
+                "iconUrl": "/home/x-4.svg",
+                "text": "Пространство работает в формате «24 на 7» — выбирайте удобное время для посещения"
+            },
+            {
+                "iconUrl": "/home/x-3.svg",
+                "text": "Интерьер каждого пространства уникален — погрузитесь в атмосферу стиля и красоты"
+            },
+            {
+                "iconUrl": "/home/x-5.svg",
+                "text": "Ожидая мастера, отдохните в кафе"
+            },
+            {
+                "iconUrl": "/home/x-1.svg",
+                "text": "Сэкономьте свое время и запишитесь на несколько процедур за один визит через удобную форму онлайн записи"
+            },
+            {
+                "iconUrl": "/home/x-2.svg",
+                "text": "Честная система отзывов позволит найти своего мастера"
+            }
+        ]
+    }
+}

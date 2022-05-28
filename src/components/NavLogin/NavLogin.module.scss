@@ -1,0 +1,44 @@
+.wrapperNavLogin {
+    background: #173343;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    .blockLogo {
+        width: calc(100% / 4);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-right: 1px solid #284b5f;
+        height: 100%;
+        padding-right: 48px;
+        .imageLogoPro {
+            position: relative;
+            width: 228px;
+            height: 42px;
+        }
+    }
+    .wrapperOutLogin {
+        width: calc(100% / 4);
+        display: flex;
+        border-left: 1px solid #284b5f;
+        height: 100%;
+        align-items: center;
+        padding-left: 48px;
+        .imageOut {
+            position: relative;
+            width: 18px;
+            height: 18px;
+        }
+        .textLoginLayout {
+            font-family: 'Noto Sans', serif;
+            line-height: 1.7;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            font-size: 0.6875rem;
+            cursor: pointer;
+            color: white;
+        }
+    }
+}

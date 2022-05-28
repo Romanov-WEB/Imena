@@ -1,0 +1,55 @@
+.blockFormHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemFormGroup,
+.itemFormCoworking,
+.itemFormData {
+    width: calc(100% / 4);
+    height: 74px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    div {
+        width: calc(100% - 19px);
+        input {
+            width: 100%;
+            border: none;
+            font-size: 0.75rem;
+            line-height: 1.7;
+            color: #173343;
+            overflow: visible;
+            border-bottom: 1px solid transparent;
+            text-transform: uppercase;
+            outline-offset: 0;
+            background-color: transparent;
+            &:focus {
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+}
+
+.imageFormHome {
+    margin: 0 0 0 15px;
+    position: relative;
+    width: 60px;
+    height: 18px;
+}
+
+.itemFormGroup,
+.itemFormCoworking {
+    border-right: 1px solid #dce7fd;
+}
+
+.btnFormHome {
+    width: calc(100% / 4);
+    height: 74px;
+    color: #ffffff;
+    background-color: #ed6b6a;
+    font-size: 0.875rem;
+    border: none;
+}

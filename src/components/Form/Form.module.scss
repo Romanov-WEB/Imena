@@ -1,0 +1,38 @@
+.containerForm {
+    box-sizing: border-box;
+    background: white;
+    border-top-left-radius: 90px;
+    width: 579px;
+}
+
+.form {
+    position: relative;
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    margin-top: 40px;
+    font-size: 12px;
+    text-align: center;
+
+    span {
+        color: #ed6b6a;
+    }
+}
+
+.btnForm {
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    background-color: #ed6b6a;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+}

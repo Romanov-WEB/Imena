@@ -1,0 +1,83 @@
+.form {
+    .input,
+    .noValidInput {
+        margin-top: 20px;
+        width: 100%;
+        display: block;
+        height: 50px;
+        border-bottom: 1px solid #dbe7ff;
+        text-transform: none;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.06em;
+        color: #173343;
+        overflow: visible;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        &:focus {
+            outline: none;
+            border-bottom: 2px solid #ed6b6a;
+        }
+    }
+    .noValidInput {
+        border-bottom: 1px solid red;
+    }
+    animation: router forwards 1s;
+}
+
+@keyframes router {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn {
+    width: 100%;
+    height: 60px;
+    margin-top: 40px;
+    color: #ffffff;
+    background: #ed6b6a linear-gradient(#fff, #fff) right center/40px 2px no-repeat;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+
+.wrapperChecked {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    a {
+        color: #ed6b6a;
+        text-decoration: underline;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 0.75rem;
+        letter-spacing: 0.06em;
+        font-weight: 600;
+    }
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    color: #173343;
+    font-weight: 600;
+    line-height: 0;
+}
+
+.checked {
+    margin-right: 15px;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dbe7ff;
+}

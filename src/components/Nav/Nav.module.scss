@@ -1,0 +1,109 @@
+.menu {
+    background: #173343;
+    color: white;
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.topMenu {
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    padding-left: 54px;
+}
+
+.menuContact {
+    display: flex;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding-right: 56px;
+
+    a {
+        font-size: 12px;
+    }
+
+    a:nth-child(2) {
+        padding-left: 42px;
+    }
+}
+
+.wrapperMenuRight {
+    width: calc(100% - 315px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.network {
+    display: flex;
+
+    a {
+        margin-left: 55px;
+    }
+}
+
+.menuNavigator {
+    display: flex;
+
+    a {
+        margin-right: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div:nth-child(1) {
+            margin-right: 10px;
+        }
+
+        div:nth-child(2) {
+            font-size: 12px;
+        }
+    }
+}
+
+.bottomMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+
+    a {
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+.logoImg {
+    margin-left: 54px;
+}
+
+.wrapperMidBtn {
+    width: calc(100% - 250px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midLink,
+.midLinkIcon {
+    margin-left: 90px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.midLink {
+    &:hover {
+        border-bottom: gray solid 1px;
+    }
+}
+
+.imageArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+}

@@ -1,0 +1,37 @@
+.wrapperContacts {
+    position: relative;
+    height: 942px;
+}
+
+.wrapperCardInfo {
+    position: absolute;
+    top: 15%;
+    left: 27%;
+    border-top-right-radius: 90px;
+    padding: 60px;
+    background-color: #fff;
+}
+
+.infoHeader {
+    font-size: 38px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.cardInfo {
+    border-top: 1px solid #dbe7ff;
+
+    div {
+        h2 {
+            font-size: 16px;
+        }
+
+        p {
+            color: #ed6b6a;
+            font-size: 16px;
+        }
+    }
+}

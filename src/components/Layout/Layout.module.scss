@@ -1,0 +1,13 @@
+.main {
+    animation: router forwards 500ms;
+    background-color: white;
+}
+
+@keyframes router {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

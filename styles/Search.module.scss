@@ -1,0 +1,58 @@
+////==== BLOCK MASTER =======
+.searchMasterBlock,
+.searchFullBlock {
+    padding: 50px 0 45px 0;
+    background-image: url(../public/search/bg-search.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    width: 1186px;
+    margin: 0 auto;
+}
+
+.headerMaster {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    line-height: 44px;
+    font-weight: 700;
+    font-size: 2em;
+    margin: 0;
+}
+
+.descriptionMaster {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    max-width: 680px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+////==== BLOCK MASTER =======
+
+////==== BLOCK FULL =======
+.headerFull {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 0.625em;
+    font-size: 2em;
+    line-height: 44px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.descriptionFull {
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.3em;
+}
+////==== BLOCK FULL =======

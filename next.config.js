@@ -1,6 +1,11 @@
-/** @type {import('next').NextConfig} */
+/** @type {import("next").NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+    reactStrictMode: true,
+    swcMinify: true,
+    experimental: {
+        runtime: 'experimental-edge',
+        serverComponents: true,
+    },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

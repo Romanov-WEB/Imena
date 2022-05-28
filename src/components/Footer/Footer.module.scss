@@ -1,0 +1,195 @@
+.footer {
+    background: #173343;
+    color: #ffffff;
+}
+.footerTopBlock {
+    padding-top: 100px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+.logoBlock {
+    width: 28%;
+    .header {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.3;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    .logoDescription {
+        letter-spacing: 0.05em;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 160%;
+        margin-top: 54px;
+    }
+}
+
+.blockForm {
+    width: 790px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .blockSubmitForm {
+        display: flex;
+        padding-top: 43px;
+        padding-bottom: 50px;
+        p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 170%;
+        }
+        .btnSubmit {
+            width: 318px;
+            height: 50px;
+            background: #ed6b6a;
+            border: none;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: white;
+        }
+        .link {
+            color: #ed6b6a;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.inputName,
+.inputEmail,
+.inputDescription {
+    color: white;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 170%;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    outline: 0;
+    outline-offset: 0;
+}
+.inputDescription {
+    height: 40px;
+}
+.label,
+.labelDescription {
+    width: 48%;
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+.labelDescription {
+    width: 100%;
+    margin-top: 60px;
+}
+.footerMidBlock {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    div:nth-child(2) {
+        display: flex;
+    }
+}
+.linkPhone {
+    display: block;
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.linkEmail {
+    display: block;
+    margin-top: 22px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.network {
+    width: 231px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        cursor: pointer;
+    }
+}
+.midBlockLeft {
+    width: 790px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.navigatorFooter {
+    padding-right: 167px;
+    div {
+        margin-top: 26px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    div:nth-child(1) {
+        margin-top: 0;
+    }
+}
+.headerMidBlock {
+    flex-direction: column;
+    h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    ul {
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
+        padding-left: 28px;
+        padding-right: 86px;
+        li {
+            list-style-type: none;
+            margin-top: 23px;
+            cursor: pointer;
+        }
+        li:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+}
+.menuNavigator {
+    margin-right: 40px;
+    a {
+        display: flex;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+        margin-top: 30px;
+        text-transform: uppercase;
+        div:nth-child(2) {
+            margin-left: 10px;
+        }
+    }
+    a:nth-child(1) {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,89 @@
+.page {
+    //TODO для анимации
+}
+
+.header {
+    padding: 0 60px;
+    background: #173343;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 170%;
+    .nav {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    margin-right: 68px;
+    position: relative;
+    width: 150px;
+    height: 80px;
+}
+
+.item {
+    height: 100%;
+    padding-left: 45px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    div {
+        padding-left: 20px;
+    }
+}
+
+.main {
+    background: #e5e5e5;
+    min-height: calc(100vh - 80px - 273px);
+}
+
+.footer {
+    background: #173343;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 170%;
+    .footerNav {
+        padding: 37.5px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+    }
+}
+
+.navBlockLeft {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contactsBlock {
+    margin-right: 70px;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.networkContainer {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerBottomBlock {
+    padding: 0 60px;
+}

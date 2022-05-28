@@ -1,0 +1,39 @@
+.blockSetting {
+    padding: 0 60px 40px;
+}
+
+.settingContainer {
+    display: flex;
+    h2 {
+        margin-top: 35px;
+        color: #173343;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 130%;
+    }
+}
+
+.infoContain,
+.passwordContain {
+    width: 420px;
+}
+
+.passwordContain {
+    margin-left: 40px;
+}
+
+.btnSetting {
+    background: #ed6b6a;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    height: 48px;
+    width: 420px;
+}

@@ -1,0 +1,54 @@
+.menu {
+    padding: 45px 60px 5px 60px;
+    user-select: none;
+}
+
+.container {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #dbe7ff;
+}
+
+.header {
+    color: #173343;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 130%;
+}
+
+.tabWrapper {
+    margin-top: 28px;
+    color: #93a0b9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 170%;
+    cursor: pointer;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btmMenu {
+    background: #ed6b6a;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 48px;
+    width: 266px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    div {
+        margin-left: 10px;
+    }
+}

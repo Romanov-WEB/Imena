@@ -1,0 +1,26 @@
+.blockSearchFull {
+    max-width: 1186px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.searchFullInput {
+    height: 74px;
+    width: calc((100% / 4) * 3);
+    padding: 2px 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.btnFull {
+    height: 74px;
+    width: calc(100% / 4);
+    color: #ffffff;
+    background-color: #ed6b6a;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+}
