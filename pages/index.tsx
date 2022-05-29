@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Layout from "../src/components/layout/Layout";
+
 
 const Home: NextPage = () => {
   return (
@@ -8,7 +10,7 @@ const Home: NextPage = () => {
         <title>Коворкинги Imena Studios</title>
       </Head>
         <main>
-
+            <Layout />
         </main>
     </div>
   )

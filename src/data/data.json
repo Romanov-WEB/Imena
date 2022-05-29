@@ -1,0 +1,108 @@
+{
+  "menu": {
+    "contacts": {
+      "phone": "+7 (495) 023-87-50",
+      "mail": "info@imena.studios"
+    },
+    "network": [
+      {
+        "url": "/image/header/facebook.svg",
+        "width": 8,
+        "height": 15,
+        "alt": "facebook"
+      },
+      {
+        "url": "/image/header/vk.svg",
+        "width": 17,
+        "height": 9,
+        "alt": "vk"
+      },
+      {
+        "url": "/image/header/instagram.svg",
+        "width": 13,
+        "height": 13,
+        "alt": "instagram"
+      },
+      {
+        "url": "/image/header/youtube.svg",
+        "width": 16,
+        "height": 11,
+        "alt": "youtube"
+      }
+    ],
+    "loginOut": [
+      {
+        "image": {
+          "url": "/image/header/user.svg",
+          "width": 10,
+          "height": 12,
+          "alt": "user"
+        },
+        "link": "",
+        "text": "Кабинет клиента"
+      },
+      {
+        "image": {
+          "url": "/image/header/master.svg",
+          "width": 10,
+          "height": 12,
+          "alt": "master"
+        },
+        "link": "",
+        "text": "Кабинет мастера"
+      },
+      {
+        "image": {
+          "url": "/image/header/list.svg",
+          "width": 10,
+          "height": 12,
+          "alt": "list"
+        },
+        "link": "",
+        "text": "Онлайн-запись"
+      },
+      {
+        "image": {
+          "url": "/image/header/search.png",
+          "width": 10,
+          "height": 12,
+          "alt": "search"
+        },
+        "link": "",
+        "text": "Найти мастера или коворкинг"
+      }
+    ],
+    "navigator": [
+      {
+        "text": "О нас",
+        "link": "",
+        "image": {
+          "url": "/image/header/arrow.png",
+          "width": 14,
+          "height": 8,
+          "alt": "arrow"
+        }
+      },
+      {
+        "text": "Коворкинги",
+        "link": ""
+      },
+      {
+        "text": "Франшиза",
+        "link": ""
+      },
+      {
+        "text": "Обучение",
+        "link": ""
+      },
+      {
+        "text": "Блог",
+        "link": ""
+      },
+      {
+        "text": "Контакты",
+        "link": ""
+      }
+    ]
+  }
+}
