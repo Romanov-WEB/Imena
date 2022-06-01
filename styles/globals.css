@@ -11,5 +11,9 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+}
+.content {
+  width: 1380px;
+  margin: 0 auto;
 }

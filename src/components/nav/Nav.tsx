@@ -19,8 +19,8 @@ export default function Nav(): JSX.Element {
                             return(
                                 <a key={index}>
                                     <Image src={link.url}
-                                           width={link.width}
-                                           height={link.height}
+                                           width={link.header.width}
+                                           height={link.header.height}
                                            priority
                                            alt={link.alt} />
                                 </a>

@@ -7,26 +7,50 @@
     "network": [
       {
         "url": "/image/header/facebook.svg",
-        "width": 8,
-        "height": 15,
+        "header": {
+          "width": 8,
+          "height": 15
+        },
+        "footer": {
+          "width": 10,
+          "height": 19
+        },
         "alt": "facebook"
       },
       {
         "url": "/image/header/vk.svg",
-        "width": 17,
-        "height": 9,
+        "header": {
+          "width": 17,
+          "height": 9
+        },
+        "footer": {
+          "width": 21,
+          "height": 12
+        },
         "alt": "vk"
       },
       {
         "url": "/image/header/instagram.svg",
-        "width": 13,
-        "height": 13,
+        "header": {
+          "width": 13,
+          "height": 13
+        },
+        "footer": {
+          "width": 19,
+          "height": 19
+        },
         "alt": "instagram"
       },
       {
         "url": "/image/header/youtube.svg",
-        "width": 16,
-        "height": 11,
+        "header": {
+          "width": 16,
+          "height": 11
+        },
+        "footer": {
+          "width": 22,
+          "height": 15
+        },
         "alt": "youtube"
       }
     ],
