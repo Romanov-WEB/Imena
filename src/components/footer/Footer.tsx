@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {Fragment, useRef} from 'react';
 import style from "./Footer.module.scss";
 import Image from "next/image";
 import data from "../../data/data.json";
@@ -7,6 +7,7 @@ const imageUrlHeader: string = "/image/footer/";
 
 export default  function Footer():JSX.Element {
     const { contacts, network, loginOut} = data.menu;
+
     return (
         <footer className={style.footer}>
             <div className="content">
@@ -49,6 +50,7 @@ export default  function Footer():JSX.Element {
                             <div>Обучение</div>
                             <div>Блог</div>
                             <div>Франшиза</div>
+                            <div>ОПЛАТА</div>
                             <div>Контакты</div>
                         </div>
                         <div className={style.headerMidBlock}>
@@ -63,7 +65,7 @@ export default  function Footer():JSX.Element {
                         <div className={style.menuNavigator}>
                             {loginOut.map((link, index) => {
                                 if (index === loginOut.length - 1) {
-                                    return <></>
+                                    return <Fragment key={index} />
                                 }
                                 return(
                                     <a key={index}>

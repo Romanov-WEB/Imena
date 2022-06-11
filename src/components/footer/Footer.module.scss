@@ -3,6 +3,7 @@
   color: #FFFFFF;
 }
 .footerTopBlock{
+  padding-top: 100px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: space-between;
@@ -67,6 +68,7 @@
   }
 }
 .inputName, .inputEmail, .inputDescription {
+  color: white;
   height: 40px;
   font-weight: 500;
   font-size: 16px;

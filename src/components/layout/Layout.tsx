@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from "../nav/Nav";
 import Footer from "../footer/Footer";
 interface LayoutProps {
-    children?: React.ReactNode
+    children: React.ReactNode
 }
 export default  function Layout ({children}:LayoutProps): JSX.Element {
     return (
@@ -10,7 +10,7 @@ export default  function Layout ({children}:LayoutProps): JSX.Element {
             <header>
                 <Nav />
             </header>
-            {/*{ children }*/}
+            { children }
             <Footer />
         </>
     );
