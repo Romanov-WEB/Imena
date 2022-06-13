@@ -62,7 +62,7 @@
           "height": 12,
           "alt": "user"
         },
-        "link": "",
+        "link": "/",
         "text": "Кабинет клиента"
       },
       {
@@ -72,7 +72,7 @@
           "height": 12,
           "alt": "master"
         },
-        "link": "",
+        "link": "/",
         "text": "Кабинет мастера"
       },
       {
@@ -82,7 +82,7 @@
           "height": 12,
           "alt": "list"
         },
-        "link": "",
+        "link": "/search/master",
         "text": "Онлайн-запись"
       },
       {
@@ -92,7 +92,7 @@
           "height": 12,
           "alt": "search"
         },
-        "link": "",
+        "link": "/search/full",
         "text": "Найти мастера или коворкинг"
       }
     ],

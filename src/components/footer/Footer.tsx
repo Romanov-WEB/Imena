@@ -2,6 +2,7 @@ import React, {Fragment, useRef} from 'react';
 import style from "./Footer.module.scss";
 import Image from "next/image";
 import data from "../../data/data.json";
+import Link from "next/link";
 
 const imageUrlHeader: string = "/image/footer/";
 
@@ -26,7 +27,9 @@ export default  function Footer():JSX.Element {
                 </div>
                 <div className={style.footerMidBlock}>
                     <div>
-                        <Image src={imageUrlHeader + 'logo.svg'} width={198} height={46} priority alt="logo" />
+                        <Link href={'/'}>
+                            <Image style={{cursor: "pointer"}} src={imageUrlHeader + 'logo.svg'} width={198} height={46} priority alt="logo" />
+                        </Link>
                         <a className={style.linkPhone} href={`tel:${contacts.phone}`}>{contacts.phone}</a>
                         <a className={style.linkEmail} href={`mailto:${contacts.mail}`}>{contacts.mail}</a>
                         <div className={style.network}>
@@ -86,7 +89,7 @@ export default  function Footer():JSX.Element {
                 <div className={style.footerBottomBlock}>
                     <div>© Imena Studios 2019 | Все права защищены</div>
                     <a>Политика конфиденциальности</a>
-                    <Image src={imageUrlHeader + 'atman-logo.svg'} width={77} height={29} />
+                    <Image src={imageUrlHeader + 'atman-logo.svg'} width={77} height={29} alt={'atman'} />
                 </div>
             </div>
         </footer>

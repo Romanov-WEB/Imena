@@ -1,9 +1,8 @@
 import React from 'react';
 import css from "../../../../styles/Home.module.scss";
 import Image from "next/image";
+import SearchMaster from "../../form/SearchMaster";
 import data from "../../../data/data.json"
-
-const imageUrlHome: string = "/home/";
 
 export default function HomeContentDescr() {
     const { items, imageSurvey } = data.home
@@ -12,7 +11,7 @@ export default function HomeContentDescr() {
             <div className={'content'}>
                 <div className={css.wrapperForm}>
                     <h2 className={css.headerForm}>ОНЛАЙН-ЗАПИСЬ К МАСТЕРУ</h2>
-                    <SearchFormHome />
+                    <SearchMaster />
                 </div>
                 <div className={css.blockIcons}>
                     {
@@ -54,42 +53,4 @@ export default function HomeContentDescr() {
     );
 }
 
-function SearchFormHome() {
-    return (
-        <form id="form-search" className={css.blockFormHome}>
-            <div className={css.itemFormGroup}>
-                <figure className={css.imageFormHome}>
-                    <Image src={imageUrlHome + 'ico-search-item.svg'} layout={'fill'} priority alt={'search-item'} />
-                </figure>
-                <div>
-                    <input type={'search'} autoComplete="off"  placeholder="Услуга" name="group"/>
-                </div>
-                <div style={{display: 'none'}}>
-                    <ul></ul>
-                    <ul></ul>
-                </div>
-            </div>
-
-            <div className={css.itemFormCoworking}>
-                <figure className={css.imageFormHome}>
-                    <Image src={imageUrlHome + 'ico-search-map.svg'} layout={'fill'} priority alt={'ico-search-map'} />
-                </figure>
-                <div>
-                    <input name="coworking" autoComplete={'off'} placeholder="Коворкинг" />
-                </div>
-                <ul style={{display: 'none'}}></ul>
-            </div>
-
-            <div className={css.itemFormData}>
-                <figure className={css.imageFormHome}>
-                    <Image src={imageUrlHome + 'ico-search-date.svg'} layout={'fill'} priority alt={'ico-search'} />
-                </figure>
-                <div>
-                    <input name="data" />
-                </div>
-            </div>
-            <button className={css.btnFormHome} type={'submit'} >НАЙТИ</button>
-        </form>
-    );
-}
 

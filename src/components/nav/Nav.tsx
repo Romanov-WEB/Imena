@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import style from "./Nav.module.scss";
 import data from "../../data/data.json";
+import Link from "next/link";
 
 export default function Nav(): JSX.Element {
     const { contacts, network, loginOut, navigator } = data.menu;
@@ -30,25 +31,29 @@ export default function Nav(): JSX.Element {
                     <div className={style.menuNavigator}>
                         {loginOut.map((link, index) => {
                             return(
-                                <a key={index}>
-                                    <div>
-                                        <Image src={link.image.url}
-                                               width={link.image.width}
-                                               height={link.image.height}
-                                               priority
-                                               alt={link.image.alt} />
-                                    </div>
-                                    <div>{link.text}</div>
-                                </a>
+                                <Link href={link.link} key={index}>
+                                    <a>
+                                        <div>
+                                            <Image src={link.image.url}
+                                                   width={link.image.width}
+                                                   height={link.image.height}
+                                                   priority
+                                                   alt={link.image.alt} />
+                                        </div>
+                                        <div>{link.text}</div>
+                                    </a>
+                                </Link>
                             )
                         })}
                     </div>
                 </div>
             </div>
             <div className={style.bottomMenu}>
-                <a className={style.logoImg}>
-                    <Image src={imageUrlHeader + 'logo.svg'} width={198} height={46} priority alt="logo" />
-                </a>
+                <Link href={'/'}>
+                    <a className={style.logoImg}>
+                        <Image src={imageUrlHeader + 'logo.svg'} width={198} height={46} priority alt="logo" />
+                    </a>
+                </Link>
                 <div className={style.wrapperMidBtn}>
                     {navigator.map((link, index) => {
                         return (link.image?
