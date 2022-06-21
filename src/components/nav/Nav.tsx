@@ -7,6 +7,7 @@ import Link from "next/link";
 export default function Nav(): JSX.Element {
     const { contacts, network, loginOut, navigator } = data.menu;
     const imageUrlHeader: string = "/image/header/";
+
     return (
         <nav className={style.menu}>
             <div className={style.topMenu}>
@@ -23,7 +24,8 @@ export default function Nav(): JSX.Element {
                                            width={link.header.width}
                                            height={link.header.height}
                                            priority
-                                           alt={link.alt} />
+                                           alt={link.alt}
+                                    />
                                 </a>
                             )
                         })}

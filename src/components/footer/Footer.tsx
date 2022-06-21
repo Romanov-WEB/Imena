@@ -28,20 +28,22 @@ export default  function Footer():JSX.Element {
                 <div className={style.footerMidBlock}>
                     <div>
                         <Link href={'/'}>
-                            <Image style={{cursor: "pointer"}} src={imageUrlHeader + 'logo.svg'} width={198} height={46} priority alt="logo" />
+                            <a><Image style={{cursor: "pointer"}} src={imageUrlHeader + 'logo.svg'} width={198} height={46} priority alt="logo" /></a>
                         </Link>
                         <a className={style.linkPhone} href={`tel:${contacts.phone}`}>{contacts.phone}</a>
                         <a className={style.linkEmail} href={`mailto:${contacts.mail}`}>{contacts.mail}</a>
                         <div className={style.network}>
                             {network.map((link, index) => {
                                 return(
-                                    <a  key={index}>
-                                        <Image src={link.url}
-                                               width={link.footer.width}
-                                               height={link.footer.height}
-                                               priority
-                                               alt={link.alt} />
-                                    </a>
+                                    <Link href={'/'} key={index}>
+                                        <a>
+                                            <Image src={link.url}
+                                                   width={link.footer.width}
+                                                   height={link.footer.height}
+                                                   priority
+                                                   alt={link.alt} />
+                                        </a>
+                                    </Link>
                                 )
                             })}
                         </div>
@@ -71,16 +73,18 @@ export default  function Footer():JSX.Element {
                                     return <Fragment key={index} />
                                 }
                                 return(
-                                    <a key={index}>
-                                        <div>
-                                            <Image src={link.image.url}
-                                                   width={link.image.width}
-                                                   height={link.image.height}
-                                                   priority
-                                                   alt={link.image.alt} />
-                                        </div>
-                                        <div>{link.text}</div>
-                                    </a>
+                                    <Link href={link.link} key={index}>
+                                        <a>
+                                            <div>
+                                                <Image src={link.image.url}
+                                                       width={link.image.width}
+                                                       height={link.image.height}
+                                                       priority
+                                                       alt={link.image.alt} />
+                                            </div>
+                                            <div>{link.text}</div>
+                                        </a>
+                                    </Link>
                                 )
                             })}
                         </div>
@@ -89,7 +93,11 @@ export default  function Footer():JSX.Element {
                 <div className={style.footerBottomBlock}>
                     <div>© Imena Studios 2019 | Все права защищены</div>
                     <a>Политика конфиденциальности</a>
-                    <Image src={imageUrlHeader + 'atman-logo.svg'} width={77} height={29} alt={'atman'} />
+                    <Link href={'https://atman.pro/?utm_source=website&utm_medium=copyright&utm_campaign=imena'}>
+                        <a target={'_blank'}>
+                            <Image src={imageUrlHeader + 'atman-logo.svg'} width={77} height={29} alt={'atman'} />
+                        </a>
+                    </Link>
                 </div>
             </div>
         </footer>

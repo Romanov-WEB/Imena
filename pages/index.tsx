@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-            <title>Коворкинги Imena Studios</title>
+                <title>Коворкинги Imena Studios</title>
             </Head>
             <Layout>
                 <main>

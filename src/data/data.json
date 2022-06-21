@@ -62,7 +62,7 @@
           "height": 12,
           "alt": "user"
         },
-        "link": "/",
+        "link": "/login/client",
         "text": "Кабинет клиента"
       },
       {
@@ -72,7 +72,7 @@
           "height": 12,
           "alt": "master"
         },
-        "link": "/",
+        "link": "/login/master",
         "text": "Кабинет мастера"
       },
       {
