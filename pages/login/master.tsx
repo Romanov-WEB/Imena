@@ -2,9 +2,10 @@ import React from 'react';
 import Layout from "../../src/components/layout/Layout";
 import Head from "next/head";
 import css from "../../styles/Login.module.scss";
+import AuthMaster from "../../src/components/form/AuthMaster";
 
 export default function Master() {
-    const urlIcon: string = './icons/';
+
     return (
         <>
             <Head>
@@ -12,9 +13,9 @@ export default function Master() {
             </Head>
             <Layout>
                 <main className={css.content}>
-                    <h2>Вход в кабинет мастера</h2>
-                    <div>
-
+                    <h2  className={css.header}>Вход в кабинет мастера</h2>
+                    <div className={css.formWrapper}>
+                        <AuthMaster />
                     </div>
                 </main>
             </Layout>

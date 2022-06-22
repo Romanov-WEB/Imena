@@ -10,6 +10,16 @@
   justify-content: center;
   align-items: center;
   padding: 40px 0;
+  animation: router forwards 1s;
+}
+
+@keyframes router {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header {

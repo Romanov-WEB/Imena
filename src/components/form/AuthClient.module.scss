@@ -19,6 +19,16 @@
       border-bottom: 2px solid #ED6B6A;
     }
   }
+  animation: router forwards 1s;
+}
+
+@keyframes router {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn {
