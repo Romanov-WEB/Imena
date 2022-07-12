@@ -1,7 +1,7 @@
 import React from 'react';
 import css from "./AuthClient.module.scss";
 
-export default function AuthMaster() {
+export default function AuthMaster():JSX.Element {
     return (
         <form id={'form-auth-master'} className={css.form}>
             <input name={'phone'} className={css.input} placeholder={'Телефон *'}/>

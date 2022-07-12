@@ -1,5 +1,5 @@
 .form {
-  .input {
+  .input, .noValidInput {
     margin-top: 20px;
     width: 100%;
     display: block;
@@ -18,6 +18,9 @@
       outline: none;
       border-bottom: 2px solid #ED6B6A;
     }
+  }
+  .noValidInput {
+    border-bottom: 1px solid red;
   }
   animation: router forwards 1s;
 }

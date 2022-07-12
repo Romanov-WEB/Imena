@@ -3,8 +3,9 @@ import Layout from "../../src/components/layout/Layout";
 import Head from "next/head";
 import css from "../../styles/Login.module.scss";
 import AuthMaster from "../../src/components/form/AuthMaster";
+import { NextPageContext } from 'next'
 
-export default function Master() {
+const Master = (): JSX.Element => {
 
     return (
         <>
@@ -22,3 +23,11 @@ export default function Master() {
         </>
     );
 }
+
+Master.getInitialProps = async (ctx: NextPageContext) => {
+    const userAgent = ctx.req ? ctx.req.headers['user-agent'] : navigator.userAgent
+    console.log(userAgent)
+    return { userAgent }
+}
+
+export default Master
