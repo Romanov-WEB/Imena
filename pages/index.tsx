@@ -11,9 +11,17 @@ const Home: NextPage = () => {
     const [loader, setLoader] = useState<boolean>(false);
 
     useEffect(() => {
+        window.onload = function () {
+            setTimeout(() => {
+                setLoader(true);
+            }, 1000);
+        };
+    }, []);
+
+    useEffect(() => {
         setTimeout(() => {
             setLoader(true);
-        }, 1500);
+        }, 1100);
     }, []);
 
     if (!loader) {
