@@ -6,7 +6,7 @@ export default function InfoSber() {
     return (
         <Layout>
             <div className={css.content}>
-                <div className={css.wrapperContent}>11</div>
+                <div className={css.wrapperContent}>111</div>
             </div>
         </Layout>
     );

@@ -23,6 +23,7 @@ const Master = (): JSX.Element => {
     );
 };
 
+//TODO 'test remove'
 Master.getInitialProps = async (ctx: NextPageContext) => {
     const userAgent = ctx.req ? ctx.req.headers['user-agent'] : navigator.userAgent;
     console.log(userAgent);

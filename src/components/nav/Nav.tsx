@@ -62,8 +62,8 @@ export default function Nav(): JSX.Element {
                 <div className={style.wrapperMidBtn}>
                     {navigator.map((link, index) => {
                         return link.image ? (
-                            <Link href={link.link}>
-                                <a key={index} className={style.midLinkIcon}>
+                            <Link href={link.link} key={index}>
+                                <a className={style.midLinkIcon}>
                                     <div>{link.text}</div>
                                     <div className={style.imageArrow}>
                                         <Image
@@ -77,7 +77,7 @@ export default function Nav(): JSX.Element {
                                 </a>
                             </Link>
                         ) : (
-                            <Link href={link.link}>
+                            <Link href={link.link} key={index}>
                                 <a key={index} className={style.midLink}>
                                     <div>{link.text}</div>
                                 </a>

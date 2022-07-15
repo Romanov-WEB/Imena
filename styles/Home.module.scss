@@ -1,3 +1,16 @@
+.main {
+  animation: router forwards 500ms;
+}
+
+@keyframes router {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .wrapperTopContent {
   display: flex;
 }
@@ -33,6 +46,7 @@
   justify-content: center;
   align-items: flex-start;
   color: white;
+
   h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 56px;
@@ -42,18 +56,21 @@
     text-transform: uppercase;
     margin: 0;
   }
-  p{
-    font-family: Arial,sans-serif;
+
+  p {
+    font-family: Arial, sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.05em;
     margin: 10px 0 0 0;
   }
-  div{
+
+  div {
     margin-top: 3rem;
-    a{
-      font-family: Arial,sans-serif;
+
+    a {
+      font-family: Arial, sans-serif;
       font-size: 14px;
       font-weight: bold;
       color: #ED6B6A;
@@ -76,7 +93,7 @@
   padding: 100px 0;
 }
 
-.wrapperForm{
+.wrapperForm {
   width: 1186px;
   margin: 0 auto;
 }
@@ -106,13 +123,15 @@
   align-items: center;
   margin-top: 30px;
   margin-bottom: 40px;
-  padding:  30px 0;
-  border-top: 1px solid hsla(0,0%,100%,.1);
+  padding: 30px 0;
+  border-top: 1px solid hsla(0, 0%, 100%, .1);
+
   .iconItem {
     position: relative;
     width: 75px;
     height: 75px;
   }
+
   .textIconContent {
     width: calc(100% - 90px);
     color: white;
@@ -125,9 +144,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
   .blockLeft {
     width: 30%;
-    border-top: 1px solid hsla(0,0%,100%,.1);
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
+
     h3 {
       font-size: 38px;
       font-weight: 900;
@@ -137,13 +158,16 @@
       color: white;
     }
   }
+
   .blockRight {
     width: 60%;
+
     .surveyContent {
       margin-top: 35px;
       display: flex;
       justify-content: flex-start;
       align-items: center;
+
       .wrapperIconsSurvey {
         background-image: url(../public/home/dots-red.svg);
         background-size: inherit;
@@ -151,12 +175,14 @@
         background-position: center;
         width: 150px;
         height: 102px;
+
         .iconSurvey {
           position: relative;
           width: 57px;
           height: 57px;
         }
       }
+
       .surveyText {
         width: calc(100% - 400px);
         text-align: left;
