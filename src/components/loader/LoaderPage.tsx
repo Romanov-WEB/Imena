@@ -4,6 +4,8 @@ import css from './Loader.module.scss';
 export default function LoaderPage() {
     return (
         <div className={css.wrapperLoader}>
+            <h1 className={css.header}>IMENA</h1>
+            <h2 className={css.subHeader}>SALON STUDIOS</h2>
             <div className={css.mosaicLoader}>
                 <div className={`${css.cell} ${css.d0}`} />
                 <div className={`${css.cell} ${css.d1}`} />

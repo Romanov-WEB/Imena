@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Map() {
+export default function Maps() {
     return (
         <div style={{ width: '100%' }}>
             <iframe

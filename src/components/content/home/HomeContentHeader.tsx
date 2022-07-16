@@ -1,5 +1,5 @@
 import React from 'react';
-import css from "../../../../styles/Home.module.scss";
+import css from '../../../../styles/Home.module.scss';
 
 export default function HomeContentHeader() {
     return (
@@ -9,9 +9,8 @@ export default function HomeContentHeader() {
                 <div className={css.descriptionHeaderContent}>
                     <h1>Коворкинги Imena Studios</h1>
                     <p>
-                        Аренда студий для мастеров красоты и здоровья.
-                        Сообщество профессионалов. Мы помогаем
-                        мастерам зарабатывать больше.
+                        Аренда студий для мастеров красоты и здоровья. Сообщество профессионалов. Мы помогаем мастерам
+                        зарабатывать больше.
                     </p>
                     <div>
                         <a>Подробнее</a>

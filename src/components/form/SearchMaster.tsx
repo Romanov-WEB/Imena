@@ -1,7 +1,8 @@
-import css from "./SearchMaster.module.scss";
-import Image from "next/image";
-import React from "react";
-const imageUrlHome: string = "/home/";
+import css from './SearchMaster.module.scss';
+import Image from 'next/image';
+import React from 'react';
+
+const imageUrlHome: string = '/home/';
 
 export default function SearchMaster() {
     return (
@@ -11,9 +12,9 @@ export default function SearchMaster() {
                     <Image src={imageUrlHome + 'ico-search-item.svg'} layout={'fill'} priority alt={'search-item'} />
                 </figure>
                 <div>
-                    <input type={'search'} autoComplete="off"  placeholder="Услуга" name="group"/>
+                    <input type={'search'} autoComplete="off" placeholder="Услуга" name="group" />
                 </div>
-                <div style={{display: 'none'}}>
+                <div style={{ display: 'none' }}>
                     <ul></ul>
                     <ul></ul>
                 </div>
@@ -26,7 +27,7 @@ export default function SearchMaster() {
                 <div>
                     <input name="coworking" autoComplete={'off'} placeholder="Коворкинг" />
                 </div>
-                <ul style={{display: 'none'}}></ul>
+                <ul style={{ display: 'none' }}></ul>
             </div>
 
             <div className={css.itemFormData}>
@@ -37,7 +38,9 @@ export default function SearchMaster() {
                     <input name="data" />
                 </div>
             </div>
-            <button className={css.btnFormHome} type={'submit'} >НАЙТИ</button>
+            <button className={css.btnFormHome} type={'submit'}>
+                НАЙТИ
+            </button>
         </form>
     );
 }

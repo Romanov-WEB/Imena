@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import css from '../styles/Home.module.scss';
 import Head from 'next/head';
 import Layout from '../src/components/layout/Layout';
 import HomeContentHeader from '../src/components/content/home/HomeContentHeader';
@@ -9,35 +8,34 @@ import LoaderPage from '../src/components/loader/LoaderPage';
 
 const Home: NextPage = () => {
     const [loader, setLoader] = useState<boolean>(false);
+    const onPreloader = (time: number) => {
+        setTimeout(() => {
+            setLoader(true);
+        }, time);
+    };
 
     useEffect(() => {
         window.onload = function () {
-            setTimeout(() => {
-                setLoader(true);
-            }, 1000);
+            onPreloader(1000);
         };
     }, []);
-
     useEffect(() => {
-        setTimeout(() => {
-            setLoader(true);
-        }, 1100);
+        onPreloader(1500);
     }, []);
 
-    if (!loader) {
-        return <LoaderPage />;
-    }
     return (
         <>
             <Head>
                 <title>Коворкинги Imena Studios</title>
             </Head>
-            <Layout>
-                <main className={css.main}>
+            {!loader ? (
+                <LoaderPage />
+            ) : (
+                <Layout>
                     <HomeContentHeader />
                     <HomeContentDescr />
-                </main>
-            </Layout>
+                </Layout>
+            )}
         </>
     );
 };

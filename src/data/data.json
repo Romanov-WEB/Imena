@@ -99,11 +99,11 @@
     "navigator": [
       {
         "text": "АРЕНДА СТУДИЙ",
-        "link": ""
+        "link": "/"
       },
       {
         "text": "МАСТЕРАМ",
-        "link": "",
+        "link": "/",
         "image": {
           "url": "/image/header/arrow.png",
           "width": 14,
@@ -113,7 +113,7 @@
       },
       {
         "text": "КОВОРКИНГИ",
-        "link": "",
+        "link": "/",
         "image": {
           "url": "/image/header/arrow.png",
           "width": 14,
@@ -123,7 +123,7 @@
       },
       {
         "text": "ФРАНШИЗА",
-        "link": ""
+        "link": "/"
       },
       {
         "text": "ОПЛАТА",
