@@ -1,4 +1,4 @@
-.content{
+.content {
   box-sizing: border-box;
   background-image: url(../public/bg/bgLogin.jpg);
   background-size: cover;
@@ -10,16 +10,6 @@
   justify-content: center;
   align-items: center;
   padding: 40px 0;
-  animation: router forwards 1s;
-}
-
-@keyframes router {
-  0%{
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .header {
@@ -43,7 +33,7 @@
 
 }
 
-.tabWrapper{
+.tabWrapper {
   display: flex;
   margin-bottom: 45px;
 }

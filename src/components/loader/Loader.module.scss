@@ -43,7 +43,8 @@ $colors: (
 );
 
 .wrapperLoader {
-  position: absolute;
+  user-select: none;
+  position: fixed;
   z-index: 100;
   background-color: #284B5F;
   width: 100%;
@@ -52,6 +53,20 @@ $colors: (
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: loader forwards 1.5s;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
 }
 
 .header {
