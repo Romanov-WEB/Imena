@@ -64,7 +64,7 @@ export default function InfoSber(): JSX.Element {
                             </p>
                             <div className={css.wrapperIcons}>
                                 {imageIcons.map((image, index) => (
-                                    <div className={css.imageIcon}>
+                                    <div className={css.imageIcon} key={index}>
                                         <Image src={image} layout={'fill'} priority alt={'image'} />
                                     </div>
                                 ))}
