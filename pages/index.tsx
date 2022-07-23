@@ -7,7 +7,7 @@ import LoaderPage from '../src/components/loader/LoaderPage';
 
 const Home: NextPage = () => {
     return (
-        <>
+        <div>
             <Head>
                 <title>Коворкинги Imena Studios</title>
             </Head>
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
                 <HomeContentHeader />
                 <HomeContentDescr />
             </Layout>
-        </>
+        </div>
     );
 };
 

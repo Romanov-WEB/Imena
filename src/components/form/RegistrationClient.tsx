@@ -47,7 +47,7 @@ export default function RegistrationClient(): JSX.Element {
             registationClient('client/registation', dataForm);
         }
     };
-    console.log(validInput);
+
     return (
         <form ref={refForm} id={'registration-client'} className={css.form}>
             <input
