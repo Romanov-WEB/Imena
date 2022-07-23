@@ -1,12 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import css from '../../styles/Login.module.scss';
 import Head from 'next/head';
 import Layout from '../../src/components/layout/Layout';
 import AuthClient from '../../src/components/form/AuthClient';
 import RegistrationClient from '../../src/components/form/RegistrationClient';
 
+const image = '/bg/bgLogin.jpg';
+
 export default function Client() {
     const [toggleBlock, setToggleBlock] = useState<boolean>(false);
+    const refStyle: React.MutableRefObject<HTMLDivElement | null> = useRef(null);
+
+    function load(src: string) {
+        return new Promise((resolve, reject) => {
+            const image = new Image();
+            image.addEventListener('load', resolve);
+            image.addEventListener('error', reject);
+            image.src = src;
+        });
+    }
+
+    useEffect(() => {
+        load(image).then(() => {
+            refStyle.current!.style.backgroundImage = `url(${image})`;
+        });
+    }, []);
 
     return (
         <>
@@ -14,7 +32,7 @@ export default function Client() {
                 <title>Вход для клиента | Imena Studio</title>
             </Head>
             <Layout>
-                <main className={css.content}>
+                <div id={'bg'} ref={refStyle} className={css.content}>
                     <h2 className={css.header}>Кабинет клиента</h2>
                     <div className={css.formWrapper}>
                         <div className={css.tabWrapper}>
@@ -30,7 +48,7 @@ export default function Client() {
                         </div>
                         {!toggleBlock ? <AuthClient /> : <RegistrationClient />}
                     </div>
-                </main>
+                </div>
             </Layout>
         </>
     );
