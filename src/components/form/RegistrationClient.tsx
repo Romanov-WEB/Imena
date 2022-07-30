@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
-import css from './AuthClient.module.scss';
-import { emailExp, phoneExp } from '../../lib/RegExp';
-import { registationClient } from '../../api/client';
+import React, { useRef, useState } from "react";
+import css from "./AuthClient.module.scss";
+import { emailExp, phoneExp } from "../../lib/RegExp";
+// import { registationClient } from '../../api/client';
 
 type ValidInput = {
     name: boolean;
@@ -16,11 +16,11 @@ export default function RegistrationClient(): JSX.Element {
     const refPassword = useRef<HTMLInputElement | null>(null);
 
     const [validInput, setValidInput] = useState<ValidInput>({
-        name: true,
-        family: true,
-        phone: true,
-        email: true,
-        password: true,
+        name: false,
+        family: false,
+        phone: false,
+        email: false,
+        password: false,
     });
 
     const onSubmitForm = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -44,7 +44,7 @@ export default function RegistrationClient(): JSX.Element {
             }
         }
         if (valid) {
-            registationClient('client/registation', dataForm);
+            // registationClient('client/registation', dataForm);
         }
     };
 

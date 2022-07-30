@@ -5,7 +5,8 @@ import css from '../../styles/Login.module.scss';
 import AuthMaster from '../../src/components/form/AuthMaster';
 import { NextPageContext } from 'next';
 
-const Master = (): JSX.Element => {
+const Master = (userAgent: string): JSX.Element => {
+    console.log(userAgent);
     return (
         <>
             <Head>
@@ -26,7 +27,7 @@ const Master = (): JSX.Element => {
 //TODO 'test remove'
 Master.getInitialProps = async (ctx: NextPageContext) => {
     const userAgent = ctx.req ? ctx.req.headers['user-agent'] : navigator.userAgent;
-    console.log(userAgent);
+    // console.log(userAgent);
     return { userAgent };
 };
 

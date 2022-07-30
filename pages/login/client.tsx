@@ -4,24 +4,16 @@ import Head from 'next/head';
 import Layout from '../../src/components/layout/Layout';
 import AuthClient from '../../src/components/form/AuthClient';
 import RegistrationClient from '../../src/components/form/RegistrationClient';
+import { loadImage } from '../../src/shared/common';
 
 const image = '/bg/bgLogin.jpg';
 
-export default function Client() {
+const Client = (): JSX.Element => {
     const [toggleBlock, setToggleBlock] = useState<boolean>(false);
     const refStyle: React.MutableRefObject<HTMLDivElement | null> = useRef(null);
 
-    function load(src: string) {
-        return new Promise((resolve, reject) => {
-            const image = new Image();
-            image.addEventListener('load', resolve);
-            image.addEventListener('error', reject);
-            image.src = src;
-        });
-    }
-
     useEffect(() => {
-        load(image).then(() => {
+        loadImage(image).then(() => {
             refStyle.current!.style.backgroundImage = `url(${image})`;
         });
     }, []);
@@ -32,7 +24,7 @@ export default function Client() {
                 <title>Вход для клиента | Imena Studio</title>
             </Head>
             <Layout>
-                <div id={'bg'} ref={refStyle} className={css.content}>
+                <div ref={refStyle} className={css.content}>
                     <h2 className={css.header}>Кабинет клиента</h2>
                     <div className={css.formWrapper}>
                         <div className={css.tabWrapper}>
@@ -52,4 +44,6 @@ export default function Client() {
             </Layout>
         </>
     );
-}
+};
+
+export default Client;
