@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import css from '../../styles/Login.module.scss';
 import Head from 'next/head';
-import Layout from '../../src/components/layout/Layout';
-import AuthClient from '../../src/components/form/AuthClient';
-import RegistrationClient from '../../src/components/form/RegistrationClient';
+import Layout from '../../src/components/Layout';
+import AuthClient from '../../src/components/AuthClient';
+import RegistrationClient from '../../src/components/RegistrationClient';
 import { loadImage } from '../../src/shared/common';
 
 const image = '/bg/bgLogin.jpg';

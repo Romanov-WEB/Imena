@@ -1,5 +1,5 @@
 import React, { Fragment, useRef } from 'react';
-import style from './Footer.module.scss';
+import style from './style.module.scss';
 import Image from 'next/image';
 import data from '../../data/data.json';
 import Link from 'next/link';

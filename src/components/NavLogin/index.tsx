@@ -1,10 +1,10 @@
 import React from 'react';
-import css from './NavLogin.module.scss';
-import Image from "next/image";
-import Link from "next/link";
+import css from './style.module.scss';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function NavLogin() {
-    const imageUrlHeader: string = "/image/header/";
+    const imageUrlHeader: string = '/image/header/';
     return (
         <nav className={css.wrapperNavLogin}>
             <div className={css.blockLogo}>

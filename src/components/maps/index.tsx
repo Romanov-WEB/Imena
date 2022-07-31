@@ -1,5 +1,5 @@
 import React from 'react';
-import css from './Maps.module.scss';
+import css from './style.module.scss';
 // @ts-ignore
 import { Clusterer, Map, Placemark, YMaps } from 'react-yandex-maps';
 

@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
-import css from "./AuthClient.module.scss";
-import { emailExp, phoneExp } from "../../lib/RegExp";
-// import { registationClient } from '../../api/client';
+import React, { useRef, useState } from 'react';
+import css from '../AuthClient/style.module.scss';
+import { emailExp, phoneExp } from '../../lib/RegExp';
+import { registationClient } from '../../api/client';
 
 type ValidInput = {
     name: boolean;
@@ -44,7 +44,7 @@ export default function RegistrationClient(): JSX.Element {
             }
         }
         if (valid) {
-            // registationClient('client/registation', dataForm);
+            registationClient('client/registation', dataForm);
         }
     };
 

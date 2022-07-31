@@ -1,10 +1,11 @@
 import React from 'react';
-import Nav from '../nav/Nav';
-import Footer from '../footer/Footer';
 import { useRouter } from 'next/router';
-import NavLogin from '../nav/NavLogin';
-import FooterLogin from '../footer/FooterLogin';
-import css from './Layout.module.scss';
+import Nav from '../Nav';
+import NavLogin from '../NavLogin';
+import Footer from '../Footer';
+import FooterLogin from '../FooterLogin';
+
+import css from './style.module.scss';
 
 interface LayoutProps {
     children: React.ReactNode;

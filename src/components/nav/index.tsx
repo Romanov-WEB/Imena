@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import style from './Nav.module.scss';
+import style from './style.module.scss';
 import data from '../../data/data.json';
 import Link from 'next/link';
 

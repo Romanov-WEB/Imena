@@ -1,13 +1,13 @@
 import React from 'react';
 import css from '../../styles/Search.module.scss';
-import Layout from "../../src/components/layout/Layout";
-import SearchMaster from "../../src/components/form/SearchMaster";
-import Head from "next/head";
+import Layout from '../../src/components/Layout';
+import SearchMaster from '../../src/components/SearchMaster';
+import Head from 'next/head';
 
 export default function Master() {
     return (
         <>
-            <Head >
+            <Head>
                 <title>Поиск мастера - Каворкинги</title>
             </Head>
             <Layout>
@@ -15,9 +15,8 @@ export default function Master() {
                     <div className={css.content}>
                         <h2 className={css.headerMaster}>ОНЛАЙН-ЗАПИСЬ</h2>
                         <p className={css.descriptionMaster}>
-                            Назначьте встречу с одним из мастеров Imena Studios. Чтобы узнать
-                            больше информации о мастере, перейдите на его страницу, кликнув
-                            на имя или фотографию мастера.
+                            Назначьте встречу с одним из мастеров Imena Studios. Чтобы узнать больше информации о
+                            мастере, перейдите на его страницу, кликнув на имя или фотографию мастера.
                         </p>
                         <SearchMaster />
                     </div>

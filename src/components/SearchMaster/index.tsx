@@ -1,4 +1,4 @@
-import css from './SearchMaster.module.scss';
+import css from './style.module.scss';
 import Image from 'next/image';
 import React from 'react';
 

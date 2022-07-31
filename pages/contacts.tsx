@@ -1,7 +1,7 @@
 import React from 'react';
 import css from '../styles/Contacts.module.scss';
-import Layout from '../src/components/layout/Layout';
-import Maps from '../src/components/maps/Maps';
+import Layout from '../src/components/Layout';
+import Maps from '../src/components/Maps';
 import Head from 'next/head';
 
 export default function Contacts() {

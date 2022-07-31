@@ -1,8 +1,8 @@
 import React from 'react';
-import css from '../../styles/Search.module.scss'
-import Head from "next/head";
-import Layout from "../../src/components/layout/Layout";
-import SearchFull from "../../src/components/form/SearchFull";
+import css from '../../styles/Search.module.scss';
+import Head from 'next/head';
+import Layout from '../../src/components/Layout';
+import SearchFull from '../../src/components/SearchFull';
 
 export default function Full() {
     return (
@@ -12,9 +12,14 @@ export default function Full() {
             </Head>
             <Layout>
                 <section className={css.searchFullBlock}>
-                    <h2 className={css.headerFull}>ПОИСК КОВОРКИНГА<br/>ИЛИ МАСТЕРА</h2>
+                    <h2 className={css.headerFull}>
+                        ПОИСК КОВОРКИНГА
+                        <br />
+                        ИЛИ МАСТЕРА
+                    </h2>
                     <p className={css.descriptionFull}>
-                        В IMENA все мастера работают на себя. Воспользуйтесь поисковой<br/>
+                        В IMENA все мастера работают на себя. Воспользуйтесь поисковой
+                        <br />
                         формой, чтобы найти мастера, а также записаться онлайн.
                     </p>
                     <SearchFull />

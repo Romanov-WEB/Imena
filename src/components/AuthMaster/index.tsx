@@ -1,9 +1,9 @@
 import React from 'react';
-import css from './AuthClient.module.scss';
+import css from '../AuthClient/style.module.scss';
 
-export default function AuthClient(): JSX.Element {
+export default function AuthMaster(): JSX.Element {
     return (
-        <form id={'form-auth-client'} className={css.form}>
+        <form id={'form-auth-master'} className={css.form}>
             <input name={'phone'} className={css.input} placeholder={'Телефон *'} />
             <input name={'password'} className={css.input} placeholder={'Пароль *'} />
             <div className={css.wrapperChecked}>

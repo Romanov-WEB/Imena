@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../../src/components/layout/Layout';
+import Layout from '../../src/components/Layout';
 import Head from 'next/head';
 import css from '../../styles/Login.module.scss';
-import AuthMaster from '../../src/components/form/AuthMaster';
+import AuthMaster from '../../src/components/AuthMaster';
 import { NextPageContext } from 'next';
 
 const Master = (userAgent: string): JSX.Element => {

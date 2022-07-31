@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import css from '../styles/InfoSber.module.scss';
-import Layout from '../src/components/layout/Layout';
+import Layout from '../src/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
 
