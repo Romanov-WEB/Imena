@@ -1,19 +1,24 @@
 import React from 'react';
 import css from './MenuClient.module.scss';
 import Image from 'next/image';
+import { observer } from 'mobx-react';
 
 const imageUrl = '/image/menu-client/';
 
-export function MenuClient(): JSX.Element {
+interface MenuClientProps {
+    menuClientIndex: any;
+}
+
+export const MenuClient = observer(({ menuClientIndex }: MenuClientProps): JSX.Element => {
     return (
         <div className={css.menu}>
             <div className={css.container}>
                 <div>
                     <h2 className={css.header}>Кабинет клиента</h2>
                     <div className={css.tabWrapper}>
-                        <div>Заявки на услуги</div>
-                        <div>Любимые мастера</div>
-                        <div>Жалобы и предложения</div>
+                        <div onClick={() => menuClientIndex.onIndexMenu(0)}>Заявки на услуги</div>
+                        <div onClick={() => menuClientIndex.onIndexMenu(1)}>Любимые мастера</div>
+                        <div onClick={() => menuClientIndex.onIndexMenu(1)}>Жалобы и предложения</div>
                     </div>
                 </div>
                 <div>
@@ -25,4 +30,4 @@ export function MenuClient(): JSX.Element {
             </div>
         </div>
     );
-}
+});

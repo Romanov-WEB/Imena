@@ -1,0 +1,80 @@
+.cardMaster {
+    margin: 20px;
+    position: relative;
+    width: 573px;
+    height: 170px;
+    border: 1px solid #dbe7ff;
+    border-radius: 5px;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__buttonDelete {
+        position: absolute;
+        background: #ffffff;
+        right: 0;
+        width: 45px;
+        height: 40px;
+        font-size: 14px;
+        border: none;
+        border-left: 1px solid #dbe7ff;
+        border-bottom: 1px solid #dbe7ff;
+        border-radius: 0 5px 0 5px;
+        cursor: pointer;
+    }
+
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 30px;
+    }
+
+    &__buttonRecord {
+        width: 100%;
+        height: 59px;
+        background-color: white;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.wrapperHeader {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__header {
+        color: #173343;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 130%;
+    }
+
+    &__subHeader {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 170%;
+        color: #505565;
+    }
+}
+
+.wrapperLink {
+    display: flex;
+    align-items: flex-end;
+
+    &__link {
+        color: #93a0b9;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 170%;
+        margin-right: 45px;
+    }
+}

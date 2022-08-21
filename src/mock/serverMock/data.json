@@ -1,0 +1,41 @@
+{
+    "userClient": {
+        "loveMaster": [
+            {
+                "name": "Ксения Соловьева1",
+                "email": "kseniyasolovievya32@gmail.com",
+                "phone": "+7 (999) 777-77-77"
+            },
+            {
+                "name": "Ксения Соловьева2",
+                "email": "kseniyasolovievya32@gmail.com",
+                "phone": "+7 (999) 777-77-77"
+            },
+            {
+                "name": "Ксения Соловьева3",
+                "email": "kseniyasolovievya32@gmail.com",
+                "phone": "+7 (999) 777-77-77"
+            },
+            {
+                "name": "Ксения Соловьева4",
+                "email": "kseniyasolovievya32@gmail.com",
+                "phone": "+7 (999) 777-77-77"
+            },
+            {
+                "name": "Ксения Соловьева5",
+                "email": "kseniyasolovievya32@gmail.com",
+                "phone": "+7 (999) 777-77-77"
+            },
+            {
+                "name": "Ксения Соловьева6",
+                "email": "kseniyasolovievya32@gmail.com",
+                "phone": "+7 (999) 777-77-77"
+            },
+            {
+                "name": "Ксения Соловьева7",
+                "email": "kseniyasolovievya32@gmail.com",
+                "phone": "+7 (999) 777-77-77"
+            }
+        ]
+    }
+}

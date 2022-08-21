@@ -7,7 +7,7 @@ export function loadImage(src: string): Promise<unknown> {
     });
 }
 
-export function getCookie(name: string): any {
+export function getCookie(name: string): string | undefined | void {
     try {
         let matches = document.cookie.match(
             new RegExp('(?:^|; )' + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'),
