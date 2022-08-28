@@ -71,10 +71,36 @@
     align-items: flex-end;
 
     &__link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         color: #93a0b9;
         font-weight: 600;
         font-size: 12px;
         line-height: 170%;
         margin-right: 45px;
     }
+}
+
+.crossIcon {
+    width: 13px;
+    height: 13px;
+}
+
+.phoneIcon {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+}
+
+.mailIcon {
+    width: 14px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.recordIcon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
 }

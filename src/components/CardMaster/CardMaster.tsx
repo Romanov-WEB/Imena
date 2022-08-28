@@ -1,12 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
 import css from './CardMaster.module.scss';
 import Link from 'next/link';
-
-import crossIcon from '@assets/CardMaster/cross.svg';
-import phoneIcon from '@assets/CardMaster/phone.svg';
-import mailIcon from '@assets/CardMaster/mail.svg';
-import recordIcon from '@assets/CardMaster/record.svg';
+import {CrossIcon} from "@components-svg/CrossIcon";
+import {PhoneIcon} from "@components-svg/PhoneIcon";
+import {MailIcon} from "@components-svg/MailIcon";
+import {RecordIcon} from "@components-svg/RecordIcon";
 
 interface CardMasterProps {
     name: string;
@@ -18,7 +16,7 @@ export function CardMaster({ name, phone, email }: CardMasterProps): JSX.Element
     return (
         <div className={css.cardMaster}>
             <button className={css.cardMaster__buttonDelete}>
-                <Image src={crossIcon} width={11} height={11} />
+                <CrossIcon className={css.crossIcon} />
             </button>
             <div className={css.cardMaster__wrapper}>
                 <div className={css.wrapperHeader}>
@@ -32,19 +30,19 @@ export function CardMaster({ name, phone, email }: CardMasterProps): JSX.Element
                 <div className={css.wrapperLink}>
                     <Link href={`tel:${phone}`}>
                         <a className={css.wrapperLink__link}>
-                            <Image src={phoneIcon} width={30} height={12} />
+                            <PhoneIcon className={css.phoneIcon} />
                             {phone}
                         </a>
                     </Link>
 
                     <a href={`mailto: ${email}`} className={css.wrapperLink__link}>
-                        <Image src={mailIcon} width={30} height={10} />
+                        <MailIcon className={css.mailIcon} />
                         {email}
                     </a>
                 </div>
             </div>
             <button className={css.cardMaster__buttonRecord}>
-                <Image src={recordIcon} width={30} style={{ marginRight: '5px' }} height={15} priority />
+                <RecordIcon className={css.recordIcon} />
                 Записаться на услугу
             </button>
         </div>
