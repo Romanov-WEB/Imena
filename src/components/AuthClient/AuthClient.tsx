@@ -8,7 +8,7 @@ export function AuthClient(): JSX.Element {
     const login = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
         // TODO токен переменная для функции проверки пароля (api-client)
-        const token = '999';
+        const token = '777';
         let date: Date = new Date(Date.now() / 1000 + 60 * 60 * 24 * 30);
         setCookie('clientToken', token, {
             expires: date,

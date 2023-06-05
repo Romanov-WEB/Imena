@@ -1,12 +1,13 @@
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
+import { getToken } from './server/actions/getToken/getToken';
 
-export function middleware(request: NextRequest, response: NextResponse) {
+export async function middleware(request: NextRequest, response: NextResponse) {
     const { cookies } = request;
     response = NextResponse.next();
-    // TODO куки заглушка авторизации в качестве проверки редиректа
     //редиректы страниц
-    if (cookies.get('clientToken') === '999' && request.url.includes('login/client')) {
+
+    if ((await getToken(cookies.get('clientToken'))) && request.url.includes('login/client')) {
         return NextResponse.redirect(new URL('/user-client', request.url));
     }
     if (cookies.get('clientToken') === undefined && request.url.includes('user-client')) {
@@ -19,11 +20,6 @@ export function middleware(request: NextRequest, response: NextResponse) {
         return NextResponse.redirect(new URL('/login/master', request.url));
     }
 
-    // test
-    // response.cookies.set('test', '555', {
-    //     expires: new Date(),
-    //     maxAge: 300,
-    // });
 
     return response;
 }

@@ -6,6 +6,8 @@ import FooterBottomBlock from '@components/FooterBottomBlock';
 import bd from '../../data/data.json';
 import { NextRouter, useRouter } from 'next/router';
 import { deleteCookie } from '../../shared/common';
+import { observer } from 'mobx-react';
+import menuClientStore from '@store/MenuClientStore';
 
 const Logo: string = '/image/header/logo.svg';
 const outClient: string = '/layout/out-client.svg';
@@ -18,7 +20,7 @@ interface LayoutUserProps {
     background?: boolean;
 }
 
-export function LayoutUser({ children, dataUser, background }: LayoutUserProps): JSX.Element {
+export const LayoutUser = observer(({ children, dataUser, background }: LayoutUserProps): JSX.Element => {
     const { network, contacts } = bd.menu;
     const router: NextRouter = useRouter();
     const token = [
@@ -45,7 +47,11 @@ export function LayoutUser({ children, dataUser, background }: LayoutUserProps):
                         <Image src={userImage} width={50} height={50} alt={'user'} priority />
                         <div>юлия соловьева</div>
                     </div>
-                    <div className={css.item} style={{ cursor: 'pointer' }}>
+                    <div
+                        className={css.item}
+                        style={{ cursor: 'pointer' }}
+                        onClick={() => menuClientStore.onIndexMenu(3)}
+                    >
                         <Image src={settings} width={19} height={19} alt={'setting'} priority />
                         <div>Настройки аккаунта</div>
                     </div>
@@ -90,4 +96,4 @@ export function LayoutUser({ children, dataUser, background }: LayoutUserProps):
             </footer>
         </div>
     );
-}
+});

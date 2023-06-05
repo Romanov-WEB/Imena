@@ -1,0 +1,194 @@
+.servicesCard {
+    height: 422px;
+    width: 573px;
+    border-radius: 5px;
+    background: #ffffff;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.confirmed {
+    padding: 2px 12px;
+    color: #66ae60;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 170%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: 1px solid #66ae60;
+    border-radius: 3px;
+}
+
+.wrapperContent {
+    padding: 20px 40px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 15px 0;
+        border-bottom: 1px solid #dbe7ff;
+    }
+    .infoMaster {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        &__name {
+            width: 42%;
+            display: flex;
+            justify-content: space-between;
+            div:nth-child(2) {
+                h3 {
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 170%;
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    color: #93a0b9;
+                }
+                p {
+                    width: 136px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 130%;
+                    color: #173343;
+                }
+            }
+        }
+        &__network {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            div {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 170%;
+                color: #93a0b9;
+                a {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .recordContent {
+        border-top: 1px solid #dbe7ff;
+        &__info {
+            margin-top: 24px;
+            display: flex;
+            div:nth-child(1) {
+                margin-right: 20px;
+                div:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+                    div {
+                        font-weight: 700;
+                        font-size: 10px;
+                        line-height: 170%;
+                        letter-spacing: 0.04em;
+                        text-transform: uppercase;
+                        color: #93a0b9;
+                    }
+                }
+            }
+
+            div:nth-child(2) {
+                div:nth-child(1) {
+                    display: flex;
+                    align-items: center;
+                    div {
+                        font-weight: 700;
+                        font-size: 10px;
+                        line-height: 170%;
+                        letter-spacing: 0.04em;
+                        text-transform: uppercase;
+                        color: #93a0b9;
+                    }
+                }
+            }
+        }
+        &__address {
+            margin-top: 24px;
+            div:nth-child(1) {
+                display: flex;
+                align-items: center;
+                div {
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 170%;
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    color: #93a0b9;
+                }
+            }
+        }
+    }
+}
+
+.text {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #173343;
+    letter-spacing: 0.04em;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: white;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid #dbe7ff;
+}
+.userIcon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.deleteIcon {
+    width: 17px;
+    height: 18px;
+}
+
+.hardIcon {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.mailIcon {
+    width: 14px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.phoneIcon {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.priceIcon {
+    width: 16px;
+    height: 13px;
+    margin-right: 10px;
+}
+
+.clockIcon {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.addressIcon {
+    width: 12px;
+    height: 16px;
+    margin-right: 10px;
+}

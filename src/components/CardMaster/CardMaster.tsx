@@ -1,10 +1,10 @@
 import React from 'react';
 import css from './CardMaster.module.scss';
 import Link from 'next/link';
-import {CrossIcon} from "@components-svg/CrossIcon";
-import {PhoneIcon} from "@components-svg/PhoneIcon";
-import {MailIcon} from "@components-svg/MailIcon";
-import {RecordIcon} from "@components-svg/RecordIcon";
+import { CrossIcon } from '@components-svg/CrossIcon';
+import { PhoneIcon } from '@components-svg/PhoneIcon';
+import { MailIcon } from '@components-svg/MailIcon';
+import { RecordIcon } from '@components-svg/RecordIcon';
 
 interface CardMasterProps {
     name: string;

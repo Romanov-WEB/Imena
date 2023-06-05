@@ -1,0 +1,85 @@
+{
+    "clients": [
+        {
+            "id": "b65e8944-2159-4859-8037-a938f92094d7",
+            "name": "Игорь",
+            "family": "Пупкин",
+            "password": "4fass4fass",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtYWlsIjoiNGZhc3NAZ21haWwuY29tIiwicGFzd29yZCI6IjRmYXNzNGZhc3MiLCJpYXQiOjE2NjIzMDg5Mzl9.KngaJApv39O7_b6aGlTQSP0r3TrT7HOjRb0AdS7VU7M",
+            "email": "4fass@gmail.com",
+            "data": "Sun Sep 04 2022 19:17:20 GMT+0300 (Москва, стандартное время)",
+            "love-master": [
+                {
+                    "id": "5c9ea111-b734-4eef-b124-0d3a87def415",
+                    "name": "Ксения Соловьева1",
+                    "email": "kseniyasolovievya32@gmail.com",
+                    "phone": "+7 (999) 777-77-77"
+                },
+                {
+                    "id": "a95b4d6b-0edf-4666-a495-929c0e858843",
+                    "name": "Ксения Соловьева2",
+                    "email": "kseniyasolovievya32@gmail.com",
+                    "phone": "+7 (999) 777-77-77"
+                },
+                {
+                    "id": "a95b4d6b-03df-4666-a495-929c0e858843",
+                    "name": "Ксения Соловьева3",
+                    "email": "kseniyasolovievya32@gmail.com",
+                    "phone": "+7 (999) 777-77-77"
+                },
+                {
+                    "id": "a95b4d6b-0edf-4666-a495-929c0e857843",
+                    "name": "Ксения Соловьева4",
+                    "email": "kseniyasolovievya32@gmail.com",
+                    "phone": "+7 (999) 777-77-77"
+                }
+            ],
+            "service": [
+                {
+                    "id": "084eca5d-b808-4146-8f57-7e2452cc0ebf",
+                    "status": true,
+                    "topic": "Стрижка",
+                    "name": "Наталья Сергеева ",
+                    "email": "kseniya@gmail.com",
+                    "phone": "+7 (999) 777-77-77",
+                    "price": "1200",
+                    "data": "20 января 2019 в 13:00",
+                    "address": "Пространство «Вавилова 79» / Москва, ул. Вавилова 79А"
+                },
+                {
+                    "id": "03eaf169-2c8b-4f84-accf-e6477f5c1d97",
+                    "status": true,
+                    "topic": "Стрижка",
+                    "name": "Наталья Сергеева ",
+                    "email": "kseniya@gmail.com",
+                    "phone": "+7 (999) 777-77-77",
+                    "price": "1200",
+                    "data": "20 января 2019 в 13:00",
+                    "address": "Пространство «Вавилова 79» / Москва, ул. Вавилова 79А"
+                },
+                {
+                    "id": "b8389aaa-1a81-4423-a1e8-2672a33d43e2",
+                    "status": true,
+                    "topic": "Стрижка",
+                    "name": "Наталья Сергеева ",
+                    "email": "kseniya@gmail.com",
+                    "phone": "+7 (999) 777-77-77",
+                    "price": "1200",
+                    "data": "20 января 2019 в 13:00",
+                    "address": "Пространство «Вавилова 79» / Москва, ул. Вавилова 79А"
+                },
+                {
+                    "id": "93cd46e5-f12f-4466-8189-90e6a027f1e7",
+                    "status": true,
+                    "topic": "Стрижка",
+                    "name": "Наталья Сергеева ",
+                    "email": "kseniya@gmail.com",
+                    "phone": "+7 (999) 777-77-77",
+                    "price": "1200",
+                    "data": "20 января 2019 в 13:00",
+                    "address": "Пространство «Вавилова 79» / Москва, ул. Вавилова 79А"
+                }
+            ]
+        }
+    ]
+}

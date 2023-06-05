@@ -1,12 +1,3 @@
-export function loadImage(src: string): Promise<unknown> {
-    return new Promise((resolve, reject) => {
-        const image = new Image();
-        image.addEventListener('load', resolve);
-        image.addEventListener('error', reject);
-        image.src = src;
-    });
-}
-
 export function getCookie(name: string): string | undefined | void {
     try {
         let matches = document.cookie.match(
