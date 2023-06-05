@@ -7,7 +7,9 @@ import React, { useEffect, useRef } from 'react';
 import SearchMaster from '@components/SearchMaster';
 import Image from 'next/image';
 import data from '../src/data/data.json';
+// @ts-ignore
 import { loadImage } from '../src/shared/common';
+import { AnimatePresence, motion } from 'framer-motion'
 
 const image = '/home/img-slider-2.jpg';
 const Page: NextPage = () => {
@@ -20,6 +22,18 @@ const Page: NextPage = () => {
         });
     }, []);
 
+    const leftContentAnimation = {
+        hidden: {
+            x: -100,
+                opacity: 0,
+        },
+        visible: (custom: number) => ({
+            x: 0,
+            opacity: 1,
+            transition: { delay: custom * 0.3 },
+        }),
+    }
+
     return (
         <div>
             <Head>
@@ -27,7 +41,12 @@ const Page: NextPage = () => {
             </Head>
             <LoaderPage />
             <Layout>
-                <section className={css.wrapperTopContent}>
+                <motion.section className={css.wrapperTopContent}
+                                initial='hidden'
+                                whileInView='visible'
+                                custom={10}
+                                variants={leftContentAnimation}
+                >
                     <div ref={refStyle} className={css.imageTop} />
                     <div className={css.descriptionWrapper}>
                         <div className={css.descriptionHeaderContent}>
@@ -41,7 +60,7 @@ const Page: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </motion.section>
                 <section className={css.descriptionContentBg}>
                     <div className={'content'}>
                         <div className={css.wrapperForm}>
